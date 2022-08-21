@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Web App</title>
+</head>
+
+<body>
+    <div class="mainest">
+
+
+        <div class="main glass">
+
+            <div class="middleelement">
+                <div class="left varqwert" id="lefter">
+                    <div class="maintime">
+                        <p id="maintime"><span id="miantimemag">24:00</span> <span id="ampm">AM</span>
+                            </span> </p>
+                    </div>
+                    <div class="maindate" id="maindate">
+                        <p>20 NOV 2021</p>
+                    </div>
+
+                    <div class="city" id="city">
+                        NULL
+                    </div>
+                </div>
+                <div class="right">
+                  
+
+                    <div class="getlocationviasearch searchnolocation">
+                        <input type="text" id="getlocation" placeholder="Search another city ">
+                        <button class="getbutton" id="getbutton">
+
+                            <i class="fa fa-search" style="font-size: 18px;">
+                            </i>
+
+                        </button>
+
+                    </div>
+                    <div class="temp varqwert" id="temp">
+
+                        <div class="tempicon" id="tempicon">
+
+                            <!-- <h3 class="iconkeyword">Sunny</h3> -->
+                            <div class="tempicon2" id="tempicon2">
+                                <img class="mainicon" id="mainicon" src="#"
+                                    alt="icon">
+
+                                <h2 id="mainweathercondition">Cloudy</h2>
+                            </div>
+                            <div id="newtemp">
+                                <p id="maincurrenttemp">48</p>
+                                <p class="degree">°</p>
+                                 <p id="celcius">C</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="buttons varqwert">
+                
+                <button class="glass qwert" onclick="toggleVisibility('properties');">Current Info</button>
+                <button class="glass qwert" onclick="toggleVisibility('Menu2');">
+                    Weekly
+                </button>
+                <button class="glass qwert" onclick="toggleVisibility('Menu3');">
+                    Hourly
+                </button>
+            </div>
+             <hr class="divider glass"> 
+            <div class="properties varqwert" id="properties">
+                <div class="container11 humidity glass varqwert">
+                    <div class="humidnexticon">
+
+                        <img src="Weathericons/humidity.png" alt="icon">
+                    </div>
+                    <div class="humidity nexttemp11">
+                        <span class="humidmagtemp" id="magtemp">40</span><span class="suffix"> %</span>
+                        <p class="property11">Humidity</p>
+                    </div>
+
+
+                </div>
+
+                <div class="container11 glass varqwert">
+                    <div class="nexticon">
+
+                        <img src="Weathericons/pressure.png" alt="icon">
+                    </div>
+                    <div class="sunrise nexttemp11">
+                        <span class="magtemp" id="pressure">350</span><span class="suffix"> Pa</span>
+                        <p class="property11">Pressure</p>
+                    </div>
+
+
+                </div>
+                <div class="container11 glass varqwert">
+                    <div class="nexticon">
+
+                        <img src="Weathericons/sunrise.png" alt="icon">
+                    </div>
+                    <div class="nexttemp11">
+                        <span class="sunrisemag magtemp" id="sunrisemag">2:00</span><span class="suffix"> AM</span>
+                        <p class="sunrise property11">Sunrise</p>
+                    </div>
+
+
+                </div>
+                <div class="container11 glass varqwert">
+                    <div class="nexticon">
+
+                        <img src="Weathericons/sunset.png" alt="icon">
+                    </div>
+                    <div class="nexttemp11">
+                        <span class="magtemp" id="sunrisemag">4:00</span><span class="suffix"> PM</span>
+                        <p class="property11">Sunset</p>
+                    </div>
+
+
+                </div>
+                <div class="container11 glass varqwert">
+                    <div class="nexticon">
+
+                        <img src="Weathericons/wind.png" alt="icon">
+                    </div>
+                    <div class="nexttemp11">
+                        <span class="magtemp" id="windmag">145</span><span class="suffix"> MPH</span>
+                        <p class="property11">Windspeed</p>
+                    </div>
+
+
+                </div>
+                <div class="container11 glass varqwert">
+                    <div class="nexticon">
+
+                        <img src="Weathericons/Precip.png" alt="icon">
+                    </div>
+                    <div class="nexttemp11">
+                        <span class="magtemp" id="preci">30</span><span class="suffix"> %</span>
+                        <p class="property11">Precipitation</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- <hr class="divider glass"> -->
+
+            <div class="sevendays" id="Menu2">
+                <div class="seven glass11" id="items1">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="seven glass11" id="items2">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="seven glass11" id="items3">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="seven glass11" id="items4">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="seven glass11" id="items5">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="seven glass11" id="items6">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="seven glass11" id="items7">
+                    <div class="icon">
+
+                    </div>
+                    <div class="max">
+                        MAX:55C
+                    </div>
+                    <div class="min">
+                        MIN:40C
+                    </div>
+                    <div class="dateofweek">
+                        15/11/2021
+                    </div>
+                </div>
+                <div class="popup" id="popup">
+                    <img src="#" alt="icon" class="iconindividual">
+
+                    <ol>
+                        <li>
+                            Date
+                        </li>
+                        <li>
+                            Max Temp:
+
+                        </li>
+                        <li>
+                            Min Temp:
+
+                        </li>
+                        <li>
+
+                            Humidity:
+                        </li>
+                        <li>
+                            Sunrise:
+
+                        </li>
+                        <li>
+
+                            Sunset:
+                        </li>
+                        <li>
+
+                            Pressure:
+                        </li>
+
+
+                    </ol>
+                    <button class="popupbutton">X</button>
+
+
+
+
+
+                </div>
+            </div>
+            <!-- <hr class="divider glass" style="margin-top: 1rem;"> -->
+            <div class="chart" id="Menu3">
+
+                <canvas class="mychart glass" id="myChart">
+
+
+
+                </canvas>
+                <!-- <div class="chartbut">
+
+                    <button class="chartbuttons" id="itemsbu1">
+                        humidity
+                    </button>
+                    <button class="chartbuttons" id="itemsbu2">temperature</button>
+                    <button class="chartbuttons" id="itemsbu3"></button>
+                    <button class="chartbuttons" id="itemsbu4"></button>
+                    <button class="chartbuttons" id="itemsbu5"></button>
+
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="index.js"></script>
+
+</html>
